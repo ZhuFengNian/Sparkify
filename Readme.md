@@ -16,17 +16,11 @@ pandas
 本地使用anaconda里安装和使用
 
 
-## 总结：
-- 通过CrossValidator进行处理，在较小的数据集中可以比较快速的得到较为优化的参数，但是对于数据量庞大的时候会花费很多时间；
-- 调参数在时候需要平衡精度和召回率，不能只针对精度进行优化；
-- 在数据清洗过程中，需要对userId和sessionId为空的数据项过滤掉。
-- 在数据探索阶段，为了方便后续进行训练，提前增加标签，以便标记哪些是流失用户。
-- 通过最终对于多个模型的对比，发现GBTClassifier是该项目最佳模型。
-
-
-## 改进
-- 在进行训练的时候应该使用pipeline进行处理，这样整体的逻辑和代码比较简单明了
-- 尽可能将每一步的操作都概括为单个的函数
+## 目录结果：
+Readme.md
+Sparkify-zh.ipynb
+Sparkify-zh.html
+SparklyReport.md
 
 ## 参考
 - https://spark.apache.org/docs/2.0.1/api/java/overview-summary.html
