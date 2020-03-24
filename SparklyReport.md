@@ -57,7 +57,7 @@ root
 
 数据集中前几行的数据项：
 
-![截屏2020-03-24上午9.52.01](/Users/fengnianzhu/Desktop/截屏2020-03-24上午9.52.01.png)
+![截屏2020-03-24上午9.52.01](./columns.png)
 
 
 
@@ -97,7 +97,7 @@ data_len.plot(kind = "hist", bins = 500)
 
 
 
-![length](/Users/fengnianzhu/Desktop/length.png)
+![length](./length.png)
 
 从图像上来分析，整体呈现正态分布。
 
@@ -112,7 +112,7 @@ plt.suptitle('Churned user by subscription-level', fontsize=20)
 
 
 
-![pay](/Users/fengnianzhu/Desktop/pay.png)
+![pay](./pay.png)
 
 从分布图上分析，整体在付费的类别中客户流失的较高。
 
@@ -127,7 +127,9 @@ sns.barplot(x='Churn', y='count', hue='gender', data=df_pd)
 
 
 
-![gender](/Users/fengnianzhu/Desktop/gender.png)
+![gender](./gender.png)
+
+
 
 从图中分析，整体上男性的流失和未流失都高于女性。同时也说明了男性使用该服务的人数较多。
 
@@ -143,7 +145,7 @@ pd_song = df_churn_user.join(df.groupby("userId") \
 sns.boxplot(x="Churn", y="song_count", data=pd_song);
 ```
 
-![song_count](/Users/fengnianzhu/Desktop/song_count.png)
+![song_count](./song_count.png)
 
 从图中分析，整体上非流失用户收听的歌曲总数较多。
 
@@ -157,7 +159,7 @@ pd_artist = df_churn_user.join(df.groupby("userId") \
 sns.boxplot(x="Churn", y="artist_count", data=pd_artist);
 ```
 
-![artist](/Users/fengnianzhu/Desktop/artist.png)
+![artist](./artist.png)
 
 从图中分析，整体上非流失用户收听的歌手的总数也较多。
 
@@ -176,7 +178,7 @@ sns.boxplot(x="Churn", y="up_count", data=pd_up);
 
 
 
-![up](/Users/fengnianzhu/Desktop/up.png)
+![up](./up.png)
 
 从图中分析，整体上非流失用户收听的歌曲总数较多。
 
@@ -193,7 +195,7 @@ sns.boxplot(x="Churn", y="down_count", data=pd_down);
 
 
 
-![down](/Users/fengnianzhu/Desktop/down.png)
+![down](./down.png)
 
 从图中分析，整体上流失用户和非流失用户在“Thumbs Down”的均值较为接近。
 
@@ -208,7 +210,7 @@ plt.xticks(rotation=90, fontsize=26)
 plt.suptitle('Churned user by location', fontsize=60)
 ```
 
-![location](/Users/fengnianzhu/Desktop/location.png)
+![location](./location.png)
 
 
 
@@ -222,7 +224,7 @@ plt.suptitle('Churned user by location', fontsize=60)
 
 F1值 = 正确率 * 召回率 * 2 / (正确率 + 召回率)
 
-![1554072551600](/Users/fengnianzhu/Desktop/1554072551600.png)
+![1554072551600](./f1.png)
 
 
 
